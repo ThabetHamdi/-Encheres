@@ -279,16 +279,15 @@ main h1 {
 }
 
 .numbertext img {
-    height: 100%; /* Make the image fill the container's height */
-    width: 100%; /* Make the image fill the container's width */
-    object-fit: cover; /* Ensure the image fills the container while maintaining its aspect ratio */
-}
+    height: 100%; 
+    width: 100%; 
+    object-fit: cover; 
 
 .mySlides {
     position: relative;
     margin-top: 50px;
-    width: 100%; /* Make the slide fill the width of its container */
-    height: 100%; /* Make the slide fill the height of its container */
+    width: 100%; 
+    height: 100%;
     justify-self: center;
     justify-content: center;
     align-items: center;
