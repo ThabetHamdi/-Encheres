@@ -156,6 +156,18 @@ header a:hover {
     text-align: center;
 }
 
+.price-range-container {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.form-range {
+    width: 100%;
+}
 .products-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));

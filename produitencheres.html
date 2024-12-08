@@ -36,10 +36,12 @@
                 <h4>Filtres de Recherche</h4>
                 <div class="filter-section">
                     <h5>Prix</h5>
-                    <input type="range" class="form-range" min="0" max="1000" step="10" id="priceRange">
-                    <div class="d-flex justify-content-between">
-                        <span id="minPrice">0 TND</span>
-                        <span id="maxPrice">10000 TND</span>
+                    <div class="price-range-container">
+                        <input type="range" class="form-range" min="0" max="1000" step="10" id="priceRange">
+                        <div class="d-flex">
+                            <span id="minPrice">0 TND hr</span>
+                            <span id="maxPrice">10000 TND</span>
+                        </div>
                     </div>
                 </div>
                 <div class="filter-section">
@@ -185,7 +187,7 @@
     <br><br><br>
     <div class="mother">
         <div class="container">
-            <h1>Autoscrolling Elements</h1>
+            <h1>Encheres populaires</h1>
             <br><br><br>
             <div class="slider">
                 <div class="tracker">
@@ -276,15 +278,14 @@
 
     function updatePrices() {
         const rangeValue = priceRange.value;
-        const minPriceValue = rangeValue;
+        const minPriceValue = 0;
         const maxPriceValue = (rangeValue / 1000) * 10000;
-        
-        minPrice.innerHTML = `${minPriceValue} TND`;
+
+        minPrice.innerHTML = `${minPriceValue} TND `;
         maxPrice.innerHTML = `${maxPriceValue.toFixed(2)} TND`;
     }
 
     priceRange.addEventListener('input', updatePrices);
-
     updatePrices();
 </script>
     <script>
